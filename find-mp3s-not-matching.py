@@ -35,6 +35,8 @@ def main():
         print("Files NOT matching the pattern:")
         for path in non_matching:
             print(path)
+        print(f"\nTotal non-matching files: {len(non_matching)}")
+
     else:
         print("All MP3 files match the pattern.")
 

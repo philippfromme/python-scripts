@@ -39,10 +39,21 @@ Example usage:
 
 - [rename-mp3s.py](./rename-mp3s.py):
 
-This script renames MP3 files based on their metadata (artist, album, track number, title). For example, it will rename files to the format "Artist - Album - 01 Title.mp3".  
+This script renames MP3 files based on their metadata with different format options:  
+- Format 1 (full): "Artist - Album - 01 Title.mp3"  
+- Format 2 (simple): "01 Title.mp3"  
   
 Example usage:  
-`python rename-mp3s.py --folder="./music" --dry-run`
+`python rename-mp3s.py --folder="./music" --format=full --dry-run`  
+`python rename-mp3s.py --folder="./music" --format=simple --dry-run`
+
+- [sort-by-creation-date.py](./sort-by-creation-date.py):
+
+This script sorts audio files (MP3/WAV) into year-named folders based on their creation date.  
+It creates a folder for each year and moves files into the corresponding folder.  
+  
+Example usage:  
+`python sort-by-creation-date.py`
 
 - [sort-mp3s.py](./sort-mp3s.py):
 

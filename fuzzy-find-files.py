@@ -48,7 +48,7 @@ def main():
         matches = []
         for tgt_name, tgt_path in target_file_names:
             similarity = fuzz.ratio(src_name, tgt_name)
-            if similarity >= 90:
+            if similarity >= 99:
                 matches.append((tgt_path, similarity))
         if matches:
             if not args.not_found_only:
